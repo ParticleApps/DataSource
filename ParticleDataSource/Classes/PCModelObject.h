@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class PCSection;
 
 /*
  This class can be subclassed to add more properties
@@ -27,5 +30,13 @@
 @property (nonatomic) UIImage *selectedImage;
 @property (nonatomic) NSAttributedString *attributedTitle;
 @property (nonatomic) UITableViewCellAccessoryType accessoryType;
+
+- (PCSection *)sectionForObject;
+
+- (PCSection *)sectionForObjectWithHeaderHeight:(CGFloat)headerHeight;
+
+- (PCSection *)sectionForObjectWithHeaderHeight:(CGFloat)headerHeight andFooterHeight:(CGFloat)footerHeight;
+
+- (PCSection *)sectionForObjectWithHeaderHeight:(CGFloat)headerHeight andHeaderTitle:(NSString *)title andFooterHeight:(CGFloat)footerHeight;
 
 @end

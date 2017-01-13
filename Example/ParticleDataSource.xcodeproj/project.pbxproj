@@ -20,6 +20,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		84DFD67F1E28DBC700433DDA /* PCTestDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFD67E1E28DBC700433DDA /* PCTestDataSource.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D89BA017C8C75E13A6DF2E25 /* Pods_ParticleDataSource_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F3C9C01D2650B4D13C6543 /* Pods_ParticleDataSource_Example.framework */; };
 		E7EF4F4C438352D5B9773706 /* Pods_ParticleDataSource_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B47361633B0DB863F118682 /* Pods_ParticleDataSource_Tests.framework */; };
@@ -37,10 +38,10 @@
 
 /* Begin PBXFileReference section */
 		07252F4FAE541194789BA93E /* Pods-ParticleDataSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleDataSource_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleDataSource_Tests/Pods-ParticleDataSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		17402DA44617B2A82B71ABDA /* ParticleDataSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ParticleDataSource.podspec; path = ../ParticleDataSource.podspec; sourceTree = "<group>"; };
+		17402DA44617B2A82B71ABDA /* ParticleDataSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ParticleDataSource.podspec; path = ../ParticleDataSource.podspec; sourceTree = "<group>"; };
 		259334710694125D27EE90AA /* Pods-ParticleDataSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleDataSource_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleDataSource_Tests/Pods-ParticleDataSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3879CDE7E4EDBF4D9C146441 /* Pods-ParticleDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleDataSource_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleDataSource_Example/Pods-ParticleDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4238255D3088A93D711E2CDD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4238255D3088A93D711E2CDD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		44F3C9C01D2650B4D13C6543 /* Pods_ParticleDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ParticleDataSource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleDataSource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,7 +63,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6B47361633B0DB863F118682 /* Pods_ParticleDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71DD9785E46DDC5929276E46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		71DD9785E46DDC5929276E46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		84DFD67D1E28DBC700433DDA /* PCTestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTestDataSource.h; sourceTree = "<group>"; };
+		84DFD67E1E28DBC700433DDA /* PCTestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTestDataSource.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B5BD4FA1B0DDDEEF1E4110B8 /* Pods-ParticleDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleDataSource_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleDataSource_Example/Pods-ParticleDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +140,8 @@
 				6003F5A6195388D20070C39A /* PCViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				84DFD67D1E28DBC700433DDA /* PCTestDataSource.h */,
+				84DFD67E1E28DBC700433DDA /* PCTestDataSource.m */,
 			);
 			name = "Example for ParticleDataSource";
 			path = ParticleDataSource;
@@ -393,6 +398,7 @@
 				6003F59E195388D20070C39A /* PCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* PCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				84DFD67F1E28DBC700433DDA /* PCTestDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

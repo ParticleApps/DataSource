@@ -9,11 +9,23 @@
 #import "PCAppDelegate.h"
 #import <ParticleDataSource/ParticleDataSource.h>
 
+#import "PCTestDataSource.h"
+
 @implementation PCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    PCTestDataSource *dataSource = [[PCTestDataSource alloc] init];
+    PCDataSourceTableViewController *viewController = [[PCDataSourceTableViewController alloc] initWithDataSource:dataSource];
+    
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self.window setRootViewController:viewController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

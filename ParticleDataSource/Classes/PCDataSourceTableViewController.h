@@ -10,17 +10,21 @@
 #import "PCDataSource.h"
 #import "PCDataSourceTableViewCell.h"
 
-@interface PCDataSourceTableViewController : UITableViewController <PCReloader>
+@interface PCDataSourceTableViewController : UIViewController <PCReloader, UITableViewDelegate, UITableViewDataSource>
 
 - (PCDataSource *)dataSource;
+
+@property (nonatomic) UIEdgeInsets tableInsets;
+
+@property (nonatomic, readonly) UITableView *tableView;
 
 @end
 
 @interface PCDataSourceTableViewController (Optional)
 
-@property (nonatomic) BOOL canPullToRefresh;
-
 - (instancetype)initWithDataSource:(PCDataSource *)dataSource;
+
+- (instancetype)initWithDataSource:(PCDataSource *)dataSource andStyle:(UITableViewStyle)style;
 
 - (void)registerCells;
 
@@ -31,5 +35,4 @@
 
 // TODO: Implement
 - (CGFloat)heightForCellWithType:(NSUInteger)type;
-
 @end
