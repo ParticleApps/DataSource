@@ -7,6 +7,7 @@
 //
 
 #import "PCAppDelegate.h"
+#import <ParticleDataSource/ParticleDataSource.h>
 
 @implementation PCAppDelegate
 

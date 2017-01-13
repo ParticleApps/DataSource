@@ -1,0 +1,6 @@
+framework module ParticleDataSource {
+  umbrella header "ParticleDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}
