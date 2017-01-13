@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ParticleDataSource_Example' do
+  pod 'ParticleDataSource', :path => '../'
+
+  target 'ParticleDataSource_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
