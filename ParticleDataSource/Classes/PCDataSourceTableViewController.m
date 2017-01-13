@@ -15,6 +15,8 @@
 
 @property (nonatomic) UITableView *tableView;
 
+@property (nonatomic) UIRefreshControl *refreshControl;
+
 @end
 
 @implementation PCDataSourceTableViewController
@@ -35,6 +37,15 @@
         
         self.dataSource = dataSource;
         self.dataSource.reloader = self;
+        
+        if (self.dataSource.title) {
+            [self setTitle:self.dataSource.title];
+        }
+        
+        self.refreshControl = [[UIRefreshControl alloc] init];
+        [self.refreshControl addTarget:self action:@selector(reloadDataSource) forControlEvents:UIControlEventValueChanged];
+        
+        self.canPullToRefresh = NO;
     }
     
     return self;
@@ -86,6 +97,21 @@
     self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, -self.tableInsets.right);
     
     [self registerCells];
+}
+
+- (void)setCanPullToRefresh:(BOOL)canPullToRefresh {
+    _canPullToRefresh = canPullToRefresh;
+    
+    if (canPullToRefresh && ![self.tableView.subviews containsObject:self.refreshControl]) {
+        [self.tableView addSubview:self.refreshControl];
+    }
+    else if (!canPullToRefresh && [self.tableView.subviews containsObject:self.refreshControl]) {
+        [self.refreshControl removeFromSuperview];
+    }
+}
+
+- (void)reloadDataSource {
+    [self.dataSource fetchDataWithCompletion:^{ [self.refreshControl endRefreshing]; }];
 }
 
 - (PCDataSource *)dataSource {

@@ -18,6 +18,10 @@
 
 @property (nonatomic, readonly) UITableView *tableView;
 
+@property (nonatomic, readonly) UIRefreshControl *refreshControl;
+
+@property (nonatomic) BOOL canPullToRefresh;
+
 @end
 
 @interface PCDataSourceTableViewController (Optional)
