@@ -17,7 +17,8 @@
 {
     // Override point for customization after application launch.
     PCTestDataSource *dataSource = [[PCTestDataSource alloc] init];
-    PCDataSourceTableViewController *viewController = [[PCDataSourceTableViewController alloc] initWithDataSource:dataSource];
+    //PCDataSourceTableViewController *viewController = [[PCDataSourceTableViewController alloc] initWithDataSource:dataSource];
+    PCDataSourceCollectionViewController *viewController = [[PCDataSourceCollectionViewController alloc] initWithDataSource:dataSource];
     
     viewController.view.backgroundColor = [UIColor whiteColor];
     

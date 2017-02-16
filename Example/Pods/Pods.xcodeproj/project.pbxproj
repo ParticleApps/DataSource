@@ -15,6 +15,12 @@
 		4BD445D6E8F3C4402892C7B0AFE68880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		507C7403DB40C8A323C97630783D5B4D /* PCDataSourceTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E18BB0A0F615339561111D37F6540F66 /* PCDataSourceTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55D2B8B525BB5A198357B2DCC71C1D9B /* Pods-ParticleDataSource_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A36E0E95BC19C074B214C24B21681D4 /* Pods-ParticleDataSource_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844268791E55299600EE9326 /* PCDataSourceCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 844268771E55299600EE9326 /* PCDataSourceCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8442687A1E55299600EE9326 /* PCDataSourceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844268781E55299600EE9326 /* PCDataSourceCollectionViewController.m */; };
+		8442687D1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442687B1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8442687E1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442687C1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.m */; };
+		844268811E5529F200EE9326 /* UICollectionView+PCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8442687F1E5529F200EE9326 /* UICollectionView+PCExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844268821E5529F200EE9326 /* UICollectionView+PCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 844268801E5529F200EE9326 /* UICollectionView+PCExtensions.m */; };
 		9ABB3442B917B9044FE121CB6007D329 /* PCDataSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C0040C58EFD4B7E586F3F15FC61A89 /* PCDataSourceTableViewCell.m */; };
 		A16655C5222F796CD788ABDA7D433515 /* PCSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B645D97E664A50940B5CC23B66C1B494 /* PCSection.m */; };
 		A2110E13456B624A6F61EDADD47BDA7F /* UITableView+PCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0125D84357B0B1704CFF23B6E43642FC /* UITableView+PCExtensions.m */; };
@@ -48,36 +54,42 @@
 		026F0F4CB2D607D8531050AAD001AC6F /* Pods-ParticleDataSource_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleDataSource_Example-resources.sh"; sourceTree = "<group>"; };
 		02B0129C0328FDC01E3CCD0E1B5E52F6 /* PCModelObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PCModelObject.m; sourceTree = "<group>"; };
 		08FD168A678F2A37FBC845085E5DE425 /* Pods-ParticleDataSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParticleDataSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		09A63F2A666BD4126C2E2D221D6F2F1D /* ParticleDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ParticleDataSource.modulemap; sourceTree = "<group>"; };
+		09A63F2A666BD4126C2E2D221D6F2F1D /* ParticleDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ParticleDataSource.modulemap; sourceTree = "<group>"; };
 		1907021A9ED849CDDC34A3D275651F6A /* PCDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PCDataSource.h; sourceTree = "<group>"; };
 		1972DC23A4A5DBF41AB782590F473624 /* PCDataSourceTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PCDataSourceTableViewController.m; sourceTree = "<group>"; };
 		1BDDB856721F82A4031F6719C60AB81A /* Pods-ParticleDataSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParticleDataSource_Example-umbrella.h"; sourceTree = "<group>"; };
 		1C6B144C797C6103766A33E8779592C8 /* PCSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PCSection.h; sourceTree = "<group>"; };
-		26B96597F30CD23757CACA40782573F4 /* Pods-ParticleDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParticleDataSource_Example.modulemap"; sourceTree = "<group>"; };
+		26B96597F30CD23757CACA40782573F4 /* Pods-ParticleDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParticleDataSource_Example.modulemap"; sourceTree = "<group>"; };
 		2C41B168CFB0FF506A24426FDE267CFA /* PCModelObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PCModelObject.h; sourceTree = "<group>"; };
 		2FDD15F9328315D9471A29E0D12B29B4 /* Pods-ParticleDataSource_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleDataSource_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		38C1AA98AE8C5A216B52B40EE1B89779 /* Pods-ParticleDataSource_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ParticleDataSource_Tests.modulemap"; sourceTree = "<group>"; };
+		38C1AA98AE8C5A216B52B40EE1B89779 /* Pods-ParticleDataSource_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParticleDataSource_Tests.modulemap"; sourceTree = "<group>"; };
 		52E4ABB6FA1F2E515D1CC5F81C360243 /* UITableView+PCExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+PCExtensions.h"; sourceTree = "<group>"; };
 		606014E9416EAFE563E5619A6AC5D5F0 /* ParticleDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParticleDataSource-umbrella.h"; sourceTree = "<group>"; };
 		60C5AA75491CBE59A0EAEF162D7A7FD1 /* PCDataSourceTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PCDataSourceTableViewCell.h; sourceTree = "<group>"; };
 		676277682A6E31615D9191B07EB28ECB /* Pods-ParticleDataSource_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParticleDataSource_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		74B5AEBE0013167E21BC7FB63F03B393 /* Pods-ParticleDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		80C19E61BCE5DE1110F3E670C4F9815F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844268771E55299600EE9326 /* PCDataSourceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDataSourceCollectionViewController.h; sourceTree = "<group>"; };
+		844268781E55299600EE9326 /* PCDataSourceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDataSourceCollectionViewController.m; sourceTree = "<group>"; };
+		8442687B1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDataSourceCollectionViewCell.h; sourceTree = "<group>"; };
+		8442687C1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDataSourceCollectionViewCell.m; sourceTree = "<group>"; };
+		8442687F1E5529F200EE9326 /* UICollectionView+PCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PCExtensions.h"; sourceTree = "<group>"; };
+		844268801E5529F200EE9326 /* UICollectionView+PCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PCExtensions.m"; sourceTree = "<group>"; };
 		88E570EDC1A676AC33DC8510BD3D12AB /* ParticleDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ParticleDataSource.h; sourceTree = "<group>"; };
 		8FCD0A5901F1CF5C4815711A1884D620 /* ParticleDataSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ParticleDataSource.xcconfig; sourceTree = "<group>"; };
 		929DAFE9CA4EB53D9A5ED640649978E1 /* Pods-ParticleDataSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleDataSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98C70245EE6F9079E8DF93830CF95591 /* ParticleDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ParticleDataSource.framework; path = ParticleDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98C70245EE6F9079E8DF93830CF95591 /* ParticleDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParticleDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A36E0E95BC19C074B214C24B21681D4 /* Pods-ParticleDataSource_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParticleDataSource_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9CC5E404FF075B5C58AB1149006EC58B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E4901E2D6BFD8DDAA1A801B7BA6084 /* ParticleDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ParticleDataSource-prefix.pch"; sourceTree = "<group>"; };
 		A48FBE209E9B3F287D9173CE42F37315 /* Pods-ParticleDataSource_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParticleDataSource_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB3F8BC858410BBDE30B2A96B4B61740 /* ParticleDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ParticleDataSource-dummy.m"; sourceTree = "<group>"; };
 		AECC0F90443C4D5E107945A401CB956E /* Pods-ParticleDataSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParticleDataSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B120B0A952A0AFE6657B55123F90E3A1 /* Pods_ParticleDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParticleDataSource_Tests.framework; path = "Pods-ParticleDataSource_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B120B0A952A0AFE6657B55123F90E3A1 /* Pods_ParticleDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B645D97E664A50940B5CC23B66C1B494 /* PCSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PCSection.m; sourceTree = "<group>"; };
 		C14D668DEB20576508CABAB6BE05195B /* Pods-ParticleDataSource_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParticleDataSource_Tests-dummy.m"; sourceTree = "<group>"; };
-		C6C62406CF9D1B1A56F1FE88DD8F3A0A /* Pods_ParticleDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParticleDataSource_Example.framework; path = "Pods-ParticleDataSource_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C62406CF9D1B1A56F1FE88DD8F3A0A /* Pods_ParticleDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D04E81CAD8E4DA24367EA0700E28E02D /* Pods-ParticleDataSource_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParticleDataSource_Tests-resources.sh"; sourceTree = "<group>"; };
 		D9AFB069E0ADD6CB40EC6D47E8329849 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,7 +159,6 @@
 			children = (
 				F48A36D934C06BF7AF75036D40F98275 /* Classes */,
 			);
-			name = ParticleDataSource;
 			path = ParticleDataSource;
 			sourceTree = "<group>";
 		};
@@ -235,18 +246,23 @@
 				88E570EDC1A676AC33DC8510BD3D12AB /* ParticleDataSource.h */,
 				1907021A9ED849CDDC34A3D275651F6A /* PCDataSource.h */,
 				E1BFF0DAF4533BD2624352CF4FB7B0E8 /* PCDataSource.m */,
+				1C6B144C797C6103766A33E8779592C8 /* PCSection.h */,
+				B645D97E664A50940B5CC23B66C1B494 /* PCSection.m */,
+				2C41B168CFB0FF506A24426FDE267CFA /* PCModelObject.h */,
+				02B0129C0328FDC01E3CCD0E1B5E52F6 /* PCModelObject.m */,
+				52E4ABB6FA1F2E515D1CC5F81C360243 /* UITableView+PCExtensions.h */,
+				0125D84357B0B1704CFF23B6E43642FC /* UITableView+PCExtensions.m */,
 				60C5AA75491CBE59A0EAEF162D7A7FD1 /* PCDataSourceTableViewCell.h */,
 				E3C0040C58EFD4B7E586F3F15FC61A89 /* PCDataSourceTableViewCell.m */,
 				E18BB0A0F615339561111D37F6540F66 /* PCDataSourceTableViewController.h */,
 				1972DC23A4A5DBF41AB782590F473624 /* PCDataSourceTableViewController.m */,
-				2C41B168CFB0FF506A24426FDE267CFA /* PCModelObject.h */,
-				02B0129C0328FDC01E3CCD0E1B5E52F6 /* PCModelObject.m */,
-				1C6B144C797C6103766A33E8779592C8 /* PCSection.h */,
-				B645D97E664A50940B5CC23B66C1B494 /* PCSection.m */,
-				52E4ABB6FA1F2E515D1CC5F81C360243 /* UITableView+PCExtensions.h */,
-				0125D84357B0B1704CFF23B6E43642FC /* UITableView+PCExtensions.m */,
+				8442687F1E5529F200EE9326 /* UICollectionView+PCExtensions.h */,
+				844268801E5529F200EE9326 /* UICollectionView+PCExtensions.m */,
+				8442687B1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.h */,
+				8442687C1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.m */,
+				844268771E55299600EE9326 /* PCDataSourceCollectionViewController.h */,
+				844268781E55299600EE9326 /* PCDataSourceCollectionViewController.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -283,14 +299,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844268811E5529F200EE9326 /* UICollectionView+PCExtensions.h in Headers */,
 				A925374A7C5779A4226A8527F458E44F /* ParticleDataSource-umbrella.h in Headers */,
 				A776AE8A538F7D7FF3822C6CD98C8730 /* ParticleDataSource.h in Headers */,
+				8442687D1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.h in Headers */,
 				A3FA2DEDAA7490219CA751CB177AC502 /* PCDataSource.h in Headers */,
 				DAB921DDD1AD35EA3D287452B0A826D3 /* PCDataSourceTableViewCell.h in Headers */,
 				507C7403DB40C8A323C97630783D5B4D /* PCDataSourceTableViewController.h in Headers */,
 				EB12130D7463603F7A72F289D83E3D42 /* PCModelObject.h in Headers */,
 				DF968751AE92ECD99F97EA38E1348A1A /* PCSection.h in Headers */,
 				0582E4032C046FB5C015511F570000AD /* UITableView+PCExtensions.h in Headers */,
+				844268791E55299600EE9326 /* PCDataSourceCollectionViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +409,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8442687E1E5529BD00EE9326 /* PCDataSourceCollectionViewCell.m in Sources */,
 				1A20C77A149623CCEFBB28055C19C22E /* ParticleDataSource-dummy.m in Sources */,
 				AEC2423E2E21A387C762D12725C32D2D /* PCDataSource.m in Sources */,
+				8442687A1E55299600EE9326 /* PCDataSourceCollectionViewController.m in Sources */,
 				9ABB3442B917B9044FE121CB6007D329 /* PCDataSourceTableViewCell.m in Sources */,
+				844268821E5529F200EE9326 /* UICollectionView+PCExtensions.m in Sources */,
 				42C47DB168FF75E6866D083D2AA7042E /* PCDataSourceTableViewController.m in Sources */,
 				A229C92C25CFB770A4D84A5B138BFD4B /* PCModelObject.m in Sources */,
 				A16655C5222F796CD788ABDA7D433515 /* PCSection.m in Sources */,

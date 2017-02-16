@@ -27,4 +27,8 @@
     return self;
 }
 
+- (Class)cellClassForType:(NSInteger)type {
+    return [PCDataSourceCollectionViewCell class];
+}
+
 @end

@@ -12,6 +12,8 @@
 #import "PCDataSource.h"
 #import "PCDataSourceTableViewCell.h"
 #import "PCDataSourceTableViewController.h"
+#import "PCDataSourceCollectionViewCell.h"
+#import "PCDataSourceCollectionViewController.h"
 #import "PCModelObject.h"
 #import "PCSection.h"
 
