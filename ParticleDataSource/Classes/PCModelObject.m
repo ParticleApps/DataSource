@@ -11,6 +11,22 @@
 
 @implementation PCModelObject
 
+- (id)copyWithZone:(NSZone *)zone {
+    id copy = [[[self class] alloc] init];
+    
+    if (copy) {
+        [copy setObject:[self.object copyWithZone:zone]];
+        [copy setTitle:[self.title copyWithZone:zone]];
+        [copy setSubtitle:[self.subtitle copyWithZone:zone]];
+        [copy setImage:[self.image copy]];
+        [copy setSelectedImage:[self.selectedImage copy]];
+        [copy setAttributedTitle:[self.attributedTitle copyWithZone:zone]];
+        [copy setAccessoryType:self.accessoryType];
+    }
+    
+    return copy;
+}
+
 - (PCSection *)sectionForObject {
     return [self sectionForObjectWithHeaderHeight:0 andHeaderTitle:nil andFooterHeight:0];
 }

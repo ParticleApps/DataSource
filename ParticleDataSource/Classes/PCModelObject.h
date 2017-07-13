@@ -17,7 +17,7 @@
  
  */
 
-@interface PCModelObject : NSObject
+@interface PCModelObject : NSObject <NSCopying>
 
 // Type is used to identify a cell's class for dequeuing
 @property (nonatomic) NSInteger type;
