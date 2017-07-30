@@ -9,6 +9,7 @@
 #import "PCModelObject.h"
 #import "PCSection.h"
 #import "UITableView+PCExtensions.h"
+#import "UICollectionView+PCExtensions.h"
 
 FOUNDATION_EXPORT double ParticleDataSourceVersionNumber;
 FOUNDATION_EXPORT const unsigned char ParticleDataSourceVersionString[];

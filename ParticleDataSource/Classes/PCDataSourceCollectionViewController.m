@@ -279,16 +279,20 @@
     [self.collectionView insertItemsAtIndexPaths:indexPaths];
 }
 
+- (void)reloadRowsAtIndexPaths:(NSArray *)indexPaths {
+    [self.collectionView reloadItemsAtIndexPaths:indexPaths];
+}
+
 - (void)deleteRowsAtIndexPaths:(NSArray *)indexPaths {
     [self.collectionView deleteItemsAtIndexPaths:indexPaths];
 }
 
-- (void)insertSectionAtIndex:(NSIndexSet *)index {
-    [self.collectionView insertSections:index];
+- (void)insertSectionAtIndex:(NSIndexSet *)indices {
+    [self.collectionView insertSections:indices];
 }
 
-- (void)deleteSectionAtIndex:(NSIndexSet *)index {
-    [self.collectionView deleteItemsAtIndexPaths:index];
+- (void)deleteSectionAtIndex:(NSIndexSet *)indices {
+    [self.collectionView deleteSections:indices];
 }
 
 #pragma mark <UICollectionViewDelegate>
