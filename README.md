@@ -1,29 +1,22 @@
 # ParticleDataSource
 
-[![CI Status](http://img.shields.io/travis/Rocco Del Priore/ParticleDataSource.svg?style=flat)](https://travis-ci.org/Rocco Del Priore/ParticleDataSource)
-[![Version](https://img.shields.io/cocoapods/v/ParticleDataSource.svg?style=flat)](http://cocoapods.org/pods/ParticleDataSource)
-[![License](https://img.shields.io/cocoapods/l/ParticleDataSource.svg?style=flat)](http://cocoapods.org/pods/ParticleDataSource)
-[![Platform](https://img.shields.io/cocoapods/p/ParticleDataSource.svg?style=flat)](http://cocoapods.org/pods/ParticleDataSource)
+[![Version](https://img.shields.io/github/release/ParticleApps/DataSource.svg)](https://github.com/ParticleApps/DataSource/releases)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Adding to Your Project
 
-## Installation
+Simply add the following to your Podfile if you're using CocoaPods:
 
-ParticleDataSource is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "ParticleDataSource"
+``` ruby
+pod 'ParticleDataSource', :git => "https://github.com/ParticleApps/DataSource.git"
 ```
 
-## Author
+or Cartfile if you're using Carthage:
 
-Rocco Del Priore, roccodelpriore@me.com
-
-## License
-
-ParticleDataSource is available under the MIT license. See the LICENSE file for more info.
+```
+github "ParticleApps/DataSource"
+```
