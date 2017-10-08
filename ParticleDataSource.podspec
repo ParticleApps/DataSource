@@ -10,4 +10,5 @@ Pod::Spec.new do |spec|
   spec.social_media_url      = 'https://twitter.com/ParticleAppsCo'
   spec.ios.deployment_target = '8.0'
   spec.source_files          = 'ParticleDataSource/Classes/**/*'
+  spec.dependency "ParticleCategories"
 end

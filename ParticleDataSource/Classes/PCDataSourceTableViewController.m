@@ -6,8 +6,9 @@
 //
 //
 
+#import <ParticleCategories/ParticleCategories.h>
+
 #import "PCDataSourceTableViewController.h"
-#import "UITableView+PCExtensions.h"
 
 @interface PCDataSourceTableViewController ()
 

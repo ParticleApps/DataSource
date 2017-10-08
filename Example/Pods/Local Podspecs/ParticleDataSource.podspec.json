@@ -9,14 +9,20 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Rocco Del Priore": "roccodelpriore@me.com"
+    "Rocco Del Priore": "rocco@particleapps.co"
   },
   "source": {
     "git": "https://github.com/ParticleApps/DataSource.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/ParticleAppsCo",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ParticleDataSource/Classes/**/*"
+  "source_files": "ParticleDataSource/Classes/**/*",
+  "dependencies": {
+    "ParticleCategories": [
+
+    ]
+  }
 }

@@ -6,8 +6,9 @@
 //
 //
 
+#import <ParticleCategories/UICollectionView+PCCategories.h>
+
 #import "PCDataSourceCollectionViewController.h"
-#import "UICollectionView+PCExtensions.h"
 
 @interface PCDataSourceCollectionViewController ()
 
