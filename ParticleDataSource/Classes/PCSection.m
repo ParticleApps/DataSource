@@ -10,6 +10,20 @@
 
 @implementation PCSection
 
+- (id)copyWithZone:(NSZone *)zone {
+    id copy = [[[self class] alloc] init];
+    
+    if (copy) {
+        [copy setItems:[self.items copyWithZone:zone]];
+        [copy setHeaderHeight:self.headerHeight];
+        [copy setHeaderTitle:[self.headerTitle copyWithZone:zone]];
+        [copy setFooterHeight:self.footerHeight];
+        [copy setFooterTitle:[self.footerTitle copyWithZone:zone]];
+    }
+    
+    return copy;
+}
+
 - (instancetype)init {
     self = [super init];
     

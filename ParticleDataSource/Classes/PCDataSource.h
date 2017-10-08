@@ -31,7 +31,7 @@
 
 @end
 
-@interface PCDataSource : NSObject
+@interface PCDataSource : NSObject <NSCopying>
 
 @property (nonatomic, readonly) NSString *title;
 

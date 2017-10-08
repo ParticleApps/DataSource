@@ -11,7 +11,7 @@
 
 @class  PCModelObject;
 
-@interface PCSection : NSObject
+@interface PCSection : NSObject <NSCopying>
 
 @property (nonatomic) NSMutableArray<PCModelObject *> *items;
 

@@ -11,8 +11,6 @@
 
 @interface PCDataSource ()
 
-//@property (nonatomic) NSMutableArray <PCSection *> *sections;
-
 @property (nonatomic) NSMutableArray <NSNumber *> *cellTypes;
 
 @property (nonatomic) NSString *title;
@@ -20,6 +18,19 @@
 @end
 
 @implementation PCDataSource
+
+- (id)copyWithZone:(NSZone *)zone {
+    id copy = [[[self class] alloc] init];
+    
+    if (copy) {
+        [copy setTitle:[self.title copyWithZone:zone]];
+        [copy setReloader:self.reloader];
+        [copy setSections:[self.sections copyWithZone:zone]];
+        [copy setCellTypes:[self.cellTypes copyWithZone:zone]];
+    }
+    
+    return copy;
+}
 
 - (instancetype)init {
     self = [super init];
