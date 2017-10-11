@@ -62,6 +62,6 @@
 
 - (void)selectItemAtIndexPath:(NSIndexPath *)indexPath;
 
-- (void)fetchDataWithCompletion:(void (^)())completion;
+- (void)fetchDataWithCompletion:(void (^)(void))completion;
 
 @end

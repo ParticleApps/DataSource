@@ -78,7 +78,7 @@
     //Placeholder to remove warning
 }
 
-- (void)fetchDataWithCompletion:(void (^)())completion {
+- (void)fetchDataWithCompletion:(void (^)(void))completion {
     //Implement in subclass for things like pull to refresh
     if (completion) completion();
 }

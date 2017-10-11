@@ -1,6 +1,6 @@
 PODS:
   - ParticleCategories (1.0.1)
-  - ParticleDataSource (0.1.0):
+  - ParticleDataSource (1.0):
     - ParticleCategories
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ParticleCategories: bb9da43a9591e4f8d4138b1899921b7220d93155
-  ParticleDataSource: 04a278ac83f23c7fd877715e59ec20333517d6f5
+  ParticleDataSource: dd404090bbdebfd2f674c4c22087339a2af1bf89
 
 PODFILE CHECKSUM: f357c0cde60282becbc10d7bd2c924f49fa4d885
 
