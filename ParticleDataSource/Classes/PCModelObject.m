@@ -9,6 +9,14 @@
 #import "PCModelObject.h"
 #import "PCSection.h"
 
+static NSString *const kObjectEncoder          = @"kObjectEncoder";
+static NSString *const kTitleEncoder           = @"kTitleEncoder";
+static NSString *const kSubtitleEncoder        = @"kSubtitleEncoder";
+static NSString *const kImageEncoder           = @"kImageEncoder";
+static NSString *const kSelectedImageEncoder   = @"kSelectedImageEncoder";
+static NSString *const kAttributedTitleEncoder = @"kAttributedTitleEncoder";
+static NSString *const kAccessoryTypeEncoder   = @"kAccessoryTypeEncoder";
+
 @implementation PCModelObject
 
 - (id)copyWithZone:(NSZone *)zone {
@@ -25,6 +33,29 @@
     }
     
     return copy;
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:self.object forKey:kObjectEncoder];
+    [encoder encodeObject:self.title forKey:kTitleEncoder];
+    [encoder encodeObject:self.subtitle forKey:kSubtitleEncoder];
+    [encoder encodeObject:self.image forKey:kImageEncoder];
+    [encoder encodeObject:self.selectedImage forKey:kSelectedImageEncoder];
+    [encoder encodeObject:self.attributedTitle forKey:kAttributedTitleEncoder];
+    [encoder encodeObject:@(self.accessoryType) forKey:kAccessoryTypeEncoder];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    if((self = [super init])) {
+        self.object = [decoder decodeObjectForKey:kObjectEncoder];
+        self.title = [decoder decodeObjectForKey:kTitleEncoder];
+        self.subtitle = [decoder decodeObjectForKey:kSubtitleEncoder];
+        self.image = [decoder decodeObjectForKey:kImageEncoder];
+        self.selectedImage = [decoder decodeObjectForKey:kSelectedImageEncoder];
+        self.attributedTitle = [decoder decodeObjectForKey:kAttributedTitleEncoder];
+        self.accessoryType = [[decoder decodeObjectForKey:kAccessoryTypeEncoder] integerValue];
+    }
+    return self;
 }
 
 - (PCSection *)sectionForObject {
