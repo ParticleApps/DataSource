@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'ParticleDataSource'
-  spec.version               = '1.0.1'
+  spec.version               = '1.0.2'
   spec.summary               = 'DataSource framework for Particle projects.'
   spec.description           = 'A framework used for modeling common UI <-> data structures on iOS.'
   spec.homepage              = 'https://github.com/ParticleApps/'

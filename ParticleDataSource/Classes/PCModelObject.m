@@ -10,6 +10,7 @@
 #import "PCSection.h"
 
 static NSString *const kObjectEncoder          = @"kObjectEncoder";
+static NSString *const kSelectedEncoder        = @"kSelectedEncoder";
 static NSString *const kTitleEncoder           = @"kTitleEncoder";
 static NSString *const kSubtitleEncoder        = @"kSubtitleEncoder";
 static NSString *const kImageEncoder           = @"kImageEncoder";
@@ -24,6 +25,7 @@ static NSString *const kAccessoryTypeEncoder   = @"kAccessoryTypeEncoder";
     
     if (copy) {
         [copy setObject:[self.object copyWithZone:zone]];
+        [copy setSelected:self.selected];
         [copy setTitle:[self.title copyWithZone:zone]];
         [copy setSubtitle:[self.subtitle copyWithZone:zone]];
         [copy setImage:[self.image copy]];
@@ -37,6 +39,7 @@ static NSString *const kAccessoryTypeEncoder   = @"kAccessoryTypeEncoder";
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeObject:self.object forKey:kObjectEncoder];
+    [encoder encodeObject:@(self.selected) forKey:kSelectedEncoder];
     [encoder encodeObject:self.title forKey:kTitleEncoder];
     [encoder encodeObject:self.subtitle forKey:kSubtitleEncoder];
     [encoder encodeObject:self.image forKey:kImageEncoder];
@@ -48,6 +51,7 @@ static NSString *const kAccessoryTypeEncoder   = @"kAccessoryTypeEncoder";
 - (id)initWithCoder:(NSCoder *)decoder {
     if((self = [super init])) {
         self.object = [decoder decodeObjectForKey:kObjectEncoder];
+        self.selected = [[decoder decodeObjectForKey:kSelectedEncoder] boolValue];
         self.title = [decoder decodeObjectForKey:kTitleEncoder];
         self.subtitle = [decoder decodeObjectForKey:kSubtitleEncoder];
         self.image = [decoder decodeObjectForKey:kImageEncoder];

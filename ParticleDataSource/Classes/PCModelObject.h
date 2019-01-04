@@ -24,6 +24,7 @@
 
 // Default properties for a cell
 @property (nonatomic) id object;
+@property (nonatomic) BOOL selected;
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *subtitle;
 @property (nonatomic) UIImage *image;
